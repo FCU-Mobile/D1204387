@@ -1,11 +1,6 @@
 # 🏃‍♂️ SlowJoggingTimer App
 一款專為 超慢跑訓練 設計的 iOS App，結合 計時器、節拍器 與 運動提醒，幫助使用者保持穩定步頻並完成運動目標。
 
-## 基本資訊
-作者：陳憶柔
-
-專案名稱：SlowJoggingTimer
-
 ## 專案簡介
 
 本專案為一款 超慢跑計時器 App，結合 計時器 與 節拍器，幫助使用者維持穩定步頻並完成運動目標。
@@ -14,7 +9,7 @@ App 具有簡潔 UI，提供 目標時間提醒（震動 + 提示音 + Alert）�
 
 ## 主要功能特色
 
-# 智慧計時器
+### 智慧計時器
 
 -可設定目標時間（ 1～60 分鐘）
 
@@ -22,13 +17,13 @@ App 具有簡潔 UI，提供 目標時間提醒（震動 + 提示音 + Alert）�
 
 -完成目標時間 → 震動 + 提示音 + Alert 提醒
 
-# 內建節拍器
+### 內建節拍器
 
 -支援 BPM（ 120～240 BPM）調整
 
 -運行時自動播放「滴答」聲幫助維持步頻
 
-# 簡潔藍灰 UI
+### 簡潔藍灰 UI
 
 -採用 藍/灰漸層 與 卡片風格
 
@@ -47,13 +42,13 @@ graph TD
     A -->|控制邏輯| G[Timer + Metronome + Alert]
 ```
 🔹 說明：
-ContentView 是 主控制中心，負責計時與節拍器邏輯，以及觸發 Alert 提醒。
+* ContentView 是 主控制中心，負責計時與節拍器邏輯，以及觸發 Alert 提醒。
 
-TimerView 負責 顯示計時進度環 與 設定目標時間。
+* TimerView 負責 顯示計時進度環 與 設定目標時間。
 
-MetronomeView 提供 BPM 調整 介面。
+* MetronomeView 提供 BPM 調整 介面。
 
-HeaderView 只負責 App 標題與 UI 裝飾。
+* HeaderView 只負責 App 標題與 UI 裝飾。
 
 ## App 介面截圖
 
@@ -74,15 +69,15 @@ SlowJoggingTimer/
 
 ## 技術架構
 
-語言：Swift 5 + SwiftUI
+* 語言：Swift 5 + SwiftUI
 
-架構：組件化設計（Header / Timer / Metronome）
+* 架構：組件化設計（Header / Timer / Metronome）
 
-系統音效：AudioToolbox（提示音 & 震動）
+* 系統音效：AudioToolbox（提示音 & 震動）
 
-計時功能：Timer API
+* 計時功能：Timer API
 
-節拍器：支援系統滴答聲（可擴充 tick.wav）
+* 節拍器：支援系統滴答聲（可擴充 tick.wav）
 
 ## 未來改進
 
