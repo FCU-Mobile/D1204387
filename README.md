@@ -88,9 +88,3 @@ SlowJoggingTimer/
 * 完成時顯示 Pulse 動畫特效
 
 * 匯出資料（CSV / 健康 App 整合）
-
-## 開發者資訊
-
-YiJou Chen (陳憶柔)
-
-2025 / 08 / 03
