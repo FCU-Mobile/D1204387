@@ -24,7 +24,7 @@ App 具有簡潔 UI，提供 目標時間提醒（震動 + 提示音 + Alert）�
 動態進度顏色（完成時變綠色）
 符合 Apple Fitness 風格
 ## 🏗 架構圖
-mermaid
+```mermaid
 
 graph TD
     A[ContentView.swift] --> B[HeaderView.swift]
@@ -33,7 +33,7 @@ graph TD
     C -->|顯示| E[進度環 + Slider]
     D -->|設定| F[BPM Slider]
     A -->|控制邏輯| G[Timer + Metronome + Alert]
-
+```
 🔹 說明：
 ContentView 是 主控制中心，負責計時與節拍器邏輯，以及觸發 Alert 提醒。
 TimerView 負責 顯示計時進度環 與 設定目標時間。
@@ -47,7 +47,8 @@ HeaderView 只負責 App 標題與 UI 裝飾。
 | [Timer](Screenshots/Timer.png) | [Alert](Screenshots/Alert.png) | [Metronome](Screenshots/Metronome.png) |
 
 ## 🧩 檔案結構
-(```plaintext)
+```plaintext
+
 SlowJoggingTimer/
 ├── ContentView.swift      # 主控制邏輯 + Alert + Timer/Metronome 整合
 ├── TimerView.swift        # 進度環顯示 + 目標時間 Slider
@@ -55,7 +56,7 @@ SlowJoggingTimer/
 ├── HeaderView.swift       # App 標題 + 漸層裝飾
 ├── Assets.xcassets/       # App 圖示與顏色資源
 └── README.md              # 專案說明
-
+```
 
 ## 🏗 技術架構
 語言：Swift 5 + SwiftUI
