@@ -25,7 +25,7 @@ App 具有簡潔 UI，提供 目標時間提醒（震動 + 提示音 + Alert）�
 符合 Apple Fitness 風格
 ## 🏗 架構圖
 mermaid
-'''
+
 graph TD
     A[ContentView.swift] --> B[HeaderView.swift]
     A --> C[TimerView.swift]
@@ -47,6 +47,7 @@ HeaderView 只負責 App 標題與 UI 裝飾。
 | [Timer](Screenshots/Timer.png) | [Alert](Screenshots/Alert.png) | [Metronome](Screenshots/Metronome.png) |
 
 ## 🧩 檔案結構
+(```plaintext)
 SlowJoggingTimer/
 ├── ContentView.swift      # 主控制邏輯 + Alert + Timer/Metronome 整合
 ├── TimerView.swift        # 進度環顯示 + 目標時間 Slider
